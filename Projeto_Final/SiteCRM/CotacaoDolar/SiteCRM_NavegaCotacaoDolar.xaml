@@ -1,0 +1,106 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SiteCRM_NavegaCotacaoDolar" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1469,862" sap2010:WorkflowViewState.IdRef="SiteCRM_NavegaCotacaoDolar_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="SiteCRM_NavegaCotacaoDolar" sap:VirtualizedContainerService.HintSize="546,797" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Alex Diogo - Site de Desafios RPA" sap:VirtualizedContainerService.HintSize="484,686" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="83075363-9606-4f3c-8749-62a3845417bd" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,469" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'CADASTROS'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="83075363-9606-4f3c-8749-62a3845417bd" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://jornadarpa.com.br/alunos/desafios/dataextractioncrm/desafio_crm_menu.html?user=aluno&amp;pass=desafiosrpa&amp;cap=20" CvTextArgument="CADASTROS" CvType="Text" DesignTimeRectangle="130, 457, 103, 19" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'CADASTROS'" FullSelectorArgument="&lt;webctrl tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='dropdown-toggle active' aaname='CADASTROS' check:innerText='CADASTROS' /&gt;" Guid="7494ade6-b71d-4fb0-83c2-a31e8c871127" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGsAAAAXCAYAAAAMX7G2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARwSURBVGhD7VjPSxtBFO4/kP/Co8cee8s1txy99RoohVBKPZQS8GDwIJaCFRGCiJCDkEsxXow3FaEREUKhmINIQIrx0khhd/q9mTeb2dnJj9m20IX9YGh3ZnzzzfvevHmTZyJHZpCLlSHkYmUIuVgZQi5WhpAQa/Q9FPW1QCy+CkQB7fmHQDS/hTyaRHcP814HovPEHSYulQ2zFWG7NcWeEKFoYU4B6/a5x8bgPBBVjC+QTaxdwvzOvR4MxZK1ZqLt8PoOfoVqICoY7/1UUyIE6DsMRPmNmreAf6vNUAwDHjcwld8fICbWCOSLWKC8G4ruLYigtXbVovVLh4OxgY23inz1xDHOzmhAnOEj24O4FAiVowmCPYSignH6u40e9xkYHCk+1Racd69sNj6hD05p3mECOMm1uPUOlK220TfUQtj8aP4FbL+DvdVQ9LUQsNlcxVwIuXGMOVjz7DgQS/iOzQNm8vsDjMVixxcRVSPuUghFZxNEXZGOzUohdzC+BmLcHYGd0RzwN6OPCKW/s/sJA4wV3sPmeiBe7NmCKo6ufnkaN23ubA9rnfF3DBP4iWusgX4dLMMT5ms7+06d4nGg+vPzwVgsdnzjhr9NXOEow4HtH/wtARG3mEBPba71wEMak5yhN7Wf3FQDQVE6gPBwUAFzurE0gxQNezRuY3gDPtd/SSxOpS/l6Q9FG4HjdjQHMk6XMuHPzweRWFM35cJTKJYxf/kUxPhULh1aJCeKJcTZtrlJxg02ivkyYDgd1i/VkAIHCFJKo5d0iAupxGIe9Sv6UAIk9saI2/fnR1j5omy4Go1ppBZLRj7mtx/Vtyw07FQ5TSxKnStxsbr76KPTJL9U6ljYsqLxF/rpDoBdfcl3p1ze3mIhSBp0P+HeUqfaRyzAk5+GSzBTKEJKsTgHrxv3FDaeSKM+YvHpNFOj5uSqNEe4L5oofnR1VtoGl/jeJOYRy26LKxCKg9BbLMa8/EyYgtlCEdKJxSkqVgHC2XUc/9g9NE0sOw1al7oE3x3OStMAlcplrF1M3IHziRVVg6jeagiYuJ10YpmYxs8GieQSipAoMFyOtQuMfksRdDZKY3qtSWIlThHnetuWbrrSRJB0LiCw46RJ8a20SphHLJOfnA/HtqNiCVmE0uI8BUYKfj4Yi6VLd7yx4qSYUHQfqYqt8BEL63eLbl/V6YiKggliJUp3FCs1OKhEj0zLJs2NbNwiQvF/WdTEYDnNgK9YUSAZT5hZpXsFby+JFPx8MBYLMB/F+kGXeBRzpVQ7twkRlJBRUcDO0GlmgPK1ibvKfhSPTnneLXeYYCHLeGSSfXnX4buGtBRx5Ie2K116iwUM8eCN9UNAeUfPfBT78/NBTCzCEI5dJofDOBG2fx6SVZ+Z6izIFAmysihgZ0SNTo9ljzYoHeF6VEsgKilFGpVm7Occ4oiC4DPSjwtpxJKni37FMFMf+lL93DSDnw8SYuX4fyHFMkvGvP3bNqnSmwf5ycoQcrEyhFysDCEXKzMQ4jeWC8w7cH1BvwAAAABJRU5ErkJggg==" InformativeScreenshot="3745552c5f1dc2998e5642d2687ae87e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Alex Diogo - Site de Desafios RPA' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cotação do Dolar'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="83075363-9606-4f3c-8749-62a3845417bd" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://jornadarpa.com.br/alunos/desafios/dataextractioncrm/desafio_crm_menu.html?user=aluno&amp;pass=desafiosrpa&amp;cap=20" CvTextArgument="Cotacao do Dolar" CvType="Text" DesignTimeRectangle="131, 547, 158, 28" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Cotação do Dolar'" FullSelectorArgument="&lt;webctrl aaname='Cotação do Dolar' class='dropdown-item' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Cotação do Dolar' class='dropdown-item' tag='A' type='' check:innerText='Cotação do Dolar' /&gt;" Guid="8f75547c-e55e-45e1-95b9-ad761e52e751" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKIAAAAgCAYAAACRiqPIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVMSURBVHhe7ZhRSyNJEMfvQ+2TL7kHP4AEzIP4kBdZMHkIB0aIyBpZIuIuKgfmMMqKoCtLBA3sRggBE0gYFGPYEDESV7IP+zX+V9Uz7fQkE0dv9RxNB/6Qme7UpKt+U9XVf4A+rVYLb4b+1NL638Xs8UeDqPWs0iBq+UIaRC1fSIOo5QtpELV8IQ2ili+kQdTyhTSIWr7QwIEYCIZc72s9r14/iG93Ubz+hR/Xp0hPhZE87qC88xgwLmH/8heK225jTy1a08/nevbT6GlAHE8hXWmjdUMAkMN+XLdR3Ekh4DbXRasG/cbYdR17sLZP0TrOYHgqewvk6luXeQ/Wb4BI/0n4ReqmDeM4i8mgy1xXaRDvoSXsNcm5zRJS8zEMj8cwuV5C7WeHHBdzmd+rRwXxyfS7INILwd+DEYwt7iJ33iGfFRC/F4waRE+NfK6Tk+vYiDrvJ4vk6MsCYuI6jJnsKWoyYzZPsbHA5dJ0sJ0trGANxZDM19GQ8y/r2BbzLfvRDPbPyL71u1rFzi6Bd5QJm9bYTQe14y2Myd8NhRDeLMG4suxeXSC33u9lCSF+YP+HWqWAogPEfmtSbVhSQZQKZnBEGds4mLPu3WWvC8SgswK1mlV8kP5/X0CD4rH/9UKM+RXeRwcxVSZnnB1ipHsssYb0zhom6PvYF4L1+gJ7yxFqHiKYybfJSTa83RkxnCUn8h4vEaZrChDPvyphRoybGbhlZDExTuBNZZCj60ZhhcbM4NbyaxghMANWeS5/jgi7geUSBamNo09zGCa7EztUxilz55Z7AQr8U6WxNoFKcynLx7N1urYD67Umh9xAJImX1fLd3facIKZo38vZdGaC/ncwgbRB1ydZMwYCRPLPyTck5xMYJR+pz/SLHh1E77JqlrRaTr75rDnsfSd48kviutvGcDSBcJQhtOYL57axN0/fCaYWB0jZ9wX+/oZiYRdhLnvTUwJCOSZsV9h2SHxvlbeUvWsIH/hFomc797Nuc9XS7L0mh/qAGGPYRNXwsqeCGMLIXwmMMYRyrmrfyoiqf/yoZwCRnchZx3lfZFLrdz026C1PqaVZqI399zTGTqfgxeXcLg3PK6VZStg2g218MbOjVPiAsu/tFkLKmnuQ6LlnwuC9Joc8QfSy58yIPc2hkApi77P8pkcHsW9ppnIWnqbmpY+TVyvSyb0gigBxaZ6lMsX3rIzoCSIf3VBwuDTLkmTbdgdx8quEwb73X0FU1+RQHxDt0uxlTwUxYq6JSnNSVo2ejDiAIMpmJd1VCuxmxQzgQ0ozXztK3IIColtpfpdBenMJIz1BCCF9Im37rDQ7mhUveyqI6v8wFdjhGAw4iG+C5BhuHs4LSHEGczm+MTfiBM+CtRGnjk7AZG3s45wBvxcwORER+zuxGb+skr0YRme3kKOA3JZmCkTfZmX6EAYFzMiuYDRqNxgSctmsiAaEm5VPVbrmTOTdrCRz/J9tALzW5JAKIu9jF2n7QDCpxzd321NBTGD7nNZPmTROaxxdPESZz0sHHkTW+Ao2DGXPcnmBI8eBNnW+OWXPx0cTH9VmhAASzrQaEoJ7Wx7P3LRRzJYIMKV0qcc3Nx0YhS1qVMyxsfXq7RFI46yAvYosfzzOxzc0Lp5F4uObzURXNpS6x/HNXWtSJUC05rFcD7TvsqeCSIpu4YhePjHvqo79HHf/BC1XiYEG8Vlkligjn1HOCbVeil4RiKRxygx89jbrMqbla70iEM1y1ajs6oz4AvW6MqLWi5UGUcsX0iBq+UIaRC1fSIOo5QtpELV8IQ2ili+kQdTyhUwQgX8Bja0oKcIePHsAAAAASUVORK5CYII=" InformativeScreenshot="86dd43d63d1655aff6982aebe684e4a8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Alex Diogo - Site de Desafios RPA' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="394, 188, 1178, 1031" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsRAAALEQF/ZF+RAAAEMUlEQVRYR7WXe2hWdRjHXzfRJCgnalFpRcZy3TQqa39IBpHUsgSrv5LVSou0Za6rBk0yvKTgP9YjGChZaiCWYH+EqZkpmiaSZUprummlK1lp0MWePs/vPGc7nr1n77tLX/hwdp7r7/1dzjnL/Z+SXO4WmA7LYSschhb4zVnvob0nil4PC+A70EJ4Ws9FsRHwbrJ4EZzx9J6JQrVwNlG4WFq9RPdFkRWposYmWAar4YTb8tHgZbonCqxPFdwLN7g7iPvz4U33p9nuYV0XyWtSxRqhxN3mvwoG+K3dL4FkvLHC3V0TiW+nChn3u28o7HDbydhu8vtkTq27skVQqf8ZxP3sRIEYO9Ph13NNz4xR5r6VKfs5yxWE8WZ4A7aBTWszHIGdsAGSBWKaPd3yD6V8Rrn7Fidsx0JCLAz21MpqUAg7gkO8Tl3CbuyHMItcP0nYF5gtiJu5CUd3mevlrN5MsGbvwCC3DYd/IY6/PA7+OGHsKXeGoilh7wdfJ+LWuSs4kwV6g3q4GvrAQHgY0vtiqLcPA5iYcvYWP8LplM2Y5q3bhfGBVFCaP8GOWr6CXWGVt+wonMlBHIV9sBneh6kwGMqgEmxzJQsXQ+F3P0H3wipIv8sPwCwPC+K+JuEvxGpPyxZBt4I9dFTKB6tUj1KZcbvK5BtVriyLC9kXzUhPsZz33N4ZSz08WwTZiyNKWDJepfVllTOvqJyGP2ap/FSnUn9HXPBvuMjzKtyWD9s3r4YGhURgdEzWPqSi81QOTVf56kmVXU9E7H8Ke73K0nvi4rs8z8531sb8MBQvJAInhIS6SposVhlzmcrIISrHnlPZO1Xlyykqux2dEy1N1GAs9IdTfp+muHc9gWtlQF+VxlqVL2raC7xVpXLi+WgA8SCaZqhsqVYp6WMxAnYy/mrLOZfj0PZ9kCmCGmTMpdFab/cBXNA/mnpbCmu+xwexj2VpfFblGjZpLrcFrgvx+fkZ+nqbbBHUKnePUDnJr/2dzTfp2qjAtsfYjC+pfPM0vhdUjvLrbRaOz1SpHGYxn8OkEJufomfggIy6WKWZNT84TaWFZsMujIp8xiA2V+uyCeUqKyeqHH5GpYGlumKg+T+F5Ps9zW5v0bkIXB7WdNNkle8pfoQptutNl3Qs2vJitAei+4VwsM3XkUXeonMROBrOyoNM/a802Pm4yg8Mws7+/LtUKjgRw5mR2WM5BfNVxrNcUYMpfs2iwlt0LgIHwT9SM5oGC1VO+brbEbTlaGJpfuGqi3gy3hYXt+8+e2wnGybZ6uULi+BHpLREZc44ldd42j3KOd/BLFhzG4zNiu1+m6GouD2O4w/QrLdo+AYsSgR/5Oe6nX6l0U6vYvPZEW33rYPzPDWI+/QgXndXcSKhCfbAPBgH98EHYG9E+7fqW7BXcpWndBA+G4T9273RTUUql/sP9MlDZUyvhekAAAAASUVORK5CYII=" InformativeScreenshot="cac4f52f7a4f13912f853dc3008da80a.jpg" Selector="&lt;html app='msedge.exe' title='Alex Diogo - Site de Desafios RPA' /&gt;" Title="Alex Diogo - Site de Desafios RPA" Url="https://jornadarpa.com.br/alunos/desafios/dataextractioncrm/desafio_crm_menu.html?user=aluno&amp;pass=desafiosrpa&amp;cap=20" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

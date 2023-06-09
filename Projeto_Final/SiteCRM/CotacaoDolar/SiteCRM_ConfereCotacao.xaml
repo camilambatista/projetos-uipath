@@ -1,0 +1,164 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SiteCRM_ConfereCotacao" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_DataPagamento" Type="InArgument(x:String)" />
+    <x:Property Name="out_CotacaoDia" Type="OutArgument(x:String)" />
+    <x:Property Name="in_Valor" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1469,1196</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>SiteCRM_ConfereCotacao_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="SiteCRM_ConfereCotacao" sap:VirtualizedContainerService.HintSize="592,1131" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SiteCRM\CotacaoDolar\SiteCRM_NavegaCotacaoDolar.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="530,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="SiteCRM\CotacaoDolar\SiteCRM_NavegaCotacaoDolar.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Alex Diogo - Site de Desafios RPA" sap:VirtualizedContainerService.HintSize="530,867" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="46ee44e3-5073-4b91-98bb-ecb8b58e4e04" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,650" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="cotacaoDia" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Filtrar'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="46ee44e3-5073-4b91-98bb-ecb8b58e4e04" Text="[in_DataPagamento]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://jornadarpa.com.br/alunos/desafios/dataextractioncrm/desafios_crm-cotacao-dolar.html" CvType="InputBox" DesignTimeRectangle="1215, 640, 177, 31" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='form-control form-control-sm' aaname='' /&gt;" Guid="1e2a5e38-8f0c-4415-a1ff-38c862c8b5e7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALUAAAAjCAYAAADSbEv3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADWSURBVHhe7dyxagJRGIRR3//hbLSQQAIWCoIPkNjcMJAsu6C9dzgHptnbfmz57waUETV1NlFfb/dxOH2N/fHDbIql13S7tkSdh8/zZXz/PP6+wPtLr+l2HfYSdYoXNDNKt+n33xJ1fuUwq3W/oqaCqKkjauqImjqipo6oqSNq6oiaOqKmjqipI2rqiJo6oqaOqKkjauqImjqipo6oqSNq6oiaOqKmjqipI2rqiJo6T6N2oYlZvbzQ5JYeM0qvL2/pRR5SfH7lZjMsva6Djk3U0EDUlBnjF03k0YTKhL4vAAAAAElFTkSuQmCC" InformativeScreenshot="5ce790767dfc1be8520e422bc8f11e20.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Alex Diogo - Site de Desafios RPA' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1161, 681, 233, 35" ElementType="Text" FriendlyName="'Filtrar'" FullSelectorArgument="&lt;webctrl parentid='datatableDolar_filter' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='datatableDolar_filter' tag='LABEL' type='' class='' aaname='Filtrar:' check:innerText='Filtrar:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOkAAAAjCAYAAABxRC0xAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAS3SURBVHhe7ZrNS1tZGIfnX+miMAOFCgUXguImK4ugYaAjFAxdRLpQuggWJozQ4GIkiyy6CAguhLsIBCQESpA6EnAyA2NwYSaDZDJ0/BinpmOJEHoRh9+c9+ZGT9NcE1EnR/t74IXcc8498Ybz+J6P+wU+c/7Y/sv9RIg56OOSklJSYiCUVIOSEhOhpBqUlJgIJdWgpMREKKkGJSUmQkk1KCkxEUqqQUmJiVBSDUpKTISSalBSYiKUVKMTSe1yGrOhSUxMtohnYcz/VHFbEnI1UFKNjiTdjOPh3a9wp2X0YCq9A9tte1ns3Syiz0OYji1j+6o6JTeOGynpycm/2Cz8ir09b6n+fvsWtVrNveqMC0k6PIfUehGFoh5lbB9enU32loUx+a7HCyhc7FFIlyj9XnbCi8P37524CDdSUvkRXq/84ITXA1+7pG3EsQ+KSMUjmHg0hIGvJ1U2TCJ/4Ap8coSCFcFUKIL5pSRefjsJ/9AoAs/mkFivwFb1+YUwJh773Aztw9hTbSptV5BfimH6ySh8I0FMvbCQ22Wq7TaSNBrj0iuBfBaSiqDyA4iE8rC/rOdbPnQ3JbX3s5gdEbmaoj+ExJaS6aSC1RcNAZuiL4RUeQ+ZUE9TnTuVtneQmhlqqlMxGFb3UdRuIWNSxqaMxXfv/vGc6d16SWWae3x87HzWJfzw4dPBee2S9gURXbCQSCRPI+NmwVxs1BHHN5NGSf4ElflysW+csvuhNLZrZ5L2hpIoHKo2NSXf835VdraubTXdPViJYMApiyO3Xxc+97Le98PYBqon9Xbk/6UxBnUJW43LWy+pTjsJr13SFuFIcriB6LC6/jKIRcmaDVR2ne5X5SpTZv5sSNqP71Yau8E2Sta408/YQrG1pFoGHotnT9fC+fQcfHo70jXaSUhJNa5d0k82jsooqcxm76Yx9UDVD0aQO3BvEqpFzD9S5XfHsfjbnoekQUdA/7yHpGqqm3jaPA3WYiSGfNXpjHQJSqrRdUm9spZkzD5V3xdGZt8tE6oqw8o69V4QidLlJfXPxLFoWR9F4tUGGntTpDtQUg1jJa2VsfhE1d/1aQKKo3H45b5hle0qXtPdNpLKejda3zTyx/X1p43tzaJa67qXpGtQUg1jJRVh0mH0SpsH45i10sgkYpgYFHF7ELCUgKdryzaSvklj4r66rzeI2YUkVotHjriBe9JXPwJRC5mVZSxGg873DcwsM5N2GUqqYa6kCiVh3grXd2G18H+/XM92HUoq09v6jm/9/oBVVuXqn0A2jkDvx33fGYkgwyOYrkNJNVpJ2HgTSc6rpF5i7cec58FyM51IiloFpa0iSm/kuMUt88DeL6OwtozUq59R2D1yS+tUd1WdvKGkbfTYBzsoyQaUng5t9X1raSSWsijIkUuDqmq7kUUqmcbqxg6PXgzBS0IZkzI25QxVxqWc70tZJ9zKTCoPL299iKAXyaYdSUrIOZyXKSVZtHtTrhW3UtJO3u1tBSUll+U8SQVJIJ1m0AY3VtLrgJISE6GkGpSUmAgl1aCkxEQoqQYlJSZCSTUoKTERSqpBSYmJUFINSkpMhJJqUFJiIpRUg5ISE6GkGpSUmMjZuAT+A8QCz4a6ScNfAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NGetText DisplayName="Get Text 'Cotação'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="46ee44e3-5073-4b91-98bb-ecb8b58e4e04" TextString="[cotacaoDia]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://jornadarpa.com.br/alunos/desafios/dataextractioncrm/desafios_crm-cotacao-dolar.html" CvType="AnyWordGroup" DesignTimeRectangle="1019, 719, 207, 41" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'3,94'" FullSelectorArgument="&lt;webctrl id='datatableDolar' tag='TABLE' /&gt;&lt;webctrl tableCol='4' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl id='datatableDolar' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' /&gt;" Guid="f3ef4691-854f-46e4-9ce6-f4139b5ba1ae" InformativeScreenshot="fca53f8cbc3c6238b1a77e2dbf9e26e2.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Alex Diogo - Site de Desafios RPA' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1019, 677, 207, 42" ElementType="Text" FriendlyName="'Cotação'" FullSelectorArgument="&lt;webctrl id='datatableDolar' tag='TABLE' /&gt;&lt;webctrl aria-label='Cotação: Ativar para ordenar a columna de maneira ascendente' tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl id='datatableDolar' tag='TABLE' /&gt;&lt;webctrl aria-label='Cotação: Ativar para ordenar a columna de maneira ascendente' type='' tag='TH' class='sorting' aaname='Cotação' check:innerText='Cotação' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[out_CotacaoDia]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[(Convert.ToDecimal(in_Valor) * Convert.ToDecimal(CotacaoDia)).ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsRAAALEQF/ZF+RAAAEMUlEQVRYR7WXe2hWdRjHXzfRJCgnalFpRcZy3TQqa39IBpHUsgSrv5LVSou0Za6rBk0yvKTgP9YjGChZaiCWYH+EqZkpmiaSZUprummlK1lp0MWePs/vPGc7nr1n77tLX/hwdp7r7/1dzjnL/Z+SXO4WmA7LYSschhb4zVnvob0nil4PC+A70EJ4Ws9FsRHwbrJ4EZzx9J6JQrVwNlG4WFq9RPdFkRWposYmWAar4YTb8tHgZbonCqxPFdwLN7g7iPvz4U33p9nuYV0XyWtSxRqhxN3mvwoG+K3dL4FkvLHC3V0TiW+nChn3u28o7HDbydhu8vtkTq27skVQqf8ZxP3sRIEYO9Ph13NNz4xR5r6VKfs5yxWE8WZ4A7aBTWszHIGdsAGSBWKaPd3yD6V8Rrn7Fidsx0JCLAz21MpqUAg7gkO8Tl3CbuyHMItcP0nYF5gtiJu5CUd3mevlrN5MsGbvwCC3DYd/IY6/PA7+OGHsKXeGoilh7wdfJ+LWuSs4kwV6g3q4GvrAQHgY0vtiqLcPA5iYcvYWP8LplM2Y5q3bhfGBVFCaP8GOWr6CXWGVt+wonMlBHIV9sBneh6kwGMqgEmxzJQsXQ+F3P0H3wipIv8sPwCwPC+K+JuEvxGpPyxZBt4I9dFTKB6tUj1KZcbvK5BtVriyLC9kXzUhPsZz33N4ZSz08WwTZiyNKWDJepfVllTOvqJyGP2ap/FSnUn9HXPBvuMjzKtyWD9s3r4YGhURgdEzWPqSi81QOTVf56kmVXU9E7H8Ke73K0nvi4rs8z8531sb8MBQvJAInhIS6SposVhlzmcrIISrHnlPZO1Xlyykqux2dEy1N1GAs9IdTfp+muHc9gWtlQF+VxlqVL2raC7xVpXLi+WgA8SCaZqhsqVYp6WMxAnYy/mrLOZfj0PZ9kCmCGmTMpdFab/cBXNA/mnpbCmu+xwexj2VpfFblGjZpLrcFrgvx+fkZ+nqbbBHUKnePUDnJr/2dzTfp2qjAtsfYjC+pfPM0vhdUjvLrbRaOz1SpHGYxn8OkEJufomfggIy6WKWZNT84TaWFZsMujIp8xiA2V+uyCeUqKyeqHH5GpYGlumKg+T+F5Ps9zW5v0bkIXB7WdNNkle8pfoQptutNl3Qs2vJitAei+4VwsM3XkUXeonMROBrOyoNM/a802Pm4yg8Mws7+/LtUKjgRw5mR2WM5BfNVxrNcUYMpfs2iwlt0LgIHwT9SM5oGC1VO+brbEbTlaGJpfuGqi3gy3hYXt+8+e2wnGybZ6uULi+BHpLREZc44ldd42j3KOd/BLFhzG4zNiu1+m6GouD2O4w/QrLdo+AYsSgR/5Oe6nX6l0U6vYvPZEW33rYPzPDWI+/QgXndXcSKhCfbAPBgH98EHYG9E+7fqW7BXcpWndBA+G4T9273RTUUql/sP9MlDZUyvhekAAAAASUVORK5CYII=" InformativeScreenshot="fad4780365f154ce26d0e893c163d8d2.jpg" Selector="&lt;html app='msedge.exe' title='Alex Diogo - Site de Desafios RPA' /&gt;" Title="Alex Diogo - Site de Desafios RPA" Url="https://jornadarpa.com.br/alunos/desafios/dataextractioncrm/desafios_crm-cotacao-dolar.html" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

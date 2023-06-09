@@ -104,6 +104,61 @@
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_DataPagamento",
+        "in_Moeda",
+        "in_Pago",
+        "in_Valor",
+        "in_Fatura",
+        "in_IDCliente",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SiteCRM/CotacaoDolar/SiteCRM_NavegaCotacaoDolar.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SiteCRM/CotacaoDolar/SiteCRM_ConfereCotacao.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "cotacaoDia&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Valor",
+        "out_CotacaoDia",
+        "in_DataPagamento"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/SetTransactionStatus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_BusinessException",
+        "in_TransactionID",
+        "in_SystemException",
+        "in_Config",
+        "in_TransactionItem",
+        "io_RetryNumber",
+        "io_TransactionNumber",
+        "io_ConsecutiveSystemExceptions"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
